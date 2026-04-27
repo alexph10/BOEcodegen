@@ -1,0 +1,28 @@
+class StopWatch {
+public:
+  double total_time, calls;
+  std::chrono::time_point<std::chrono::high_resolution_clock> start_time,
+      end_time;
+  Stopwatch() : total_time(0), calls(0) {};
+
+  inline void reset() {
+    total_time = 0;
+    calls = 0;
+  };
+
+  inline void start() {
+    start_time = std::chrono::high_resolution_clock::now();
+    calls++;
+  };
+
+  inline void stop() {
+    end_time = std::chrono::high_resolution_clock::now();
+    auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(
+                       end_time - start_time)
+                       .count();
+    total_time += static_cast<double>(elapsed);
+  };
+
+  inline double latency() { return total_time; };
+  inline double avg_latency() { return (total_time / calls); };
+};
