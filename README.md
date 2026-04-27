@@ -24,33 +24,6 @@ This project is focused on learning and systems design, not on building a comple
 - Providing production-ready exchange connectivity
 - Reproducing any third-party repository implementation line-for-line
 
-## Project Structure
-
-```text
-boe-codegen-cpp/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── CMakeLists.txt
-├── docs/
-│   ├── protocol-notes.md
-│   ├── architecture.md
-│   └── design-decisions.md
-├── schema/
-│   └── c1_boe_example.yaml
-├── src/
-│   ├── main.cpp
-│   ├── parser/
-│   ├── ir/
-│   ├── generator/
-│   └── runtime/
-├── include/
-│   └── boe_codegen/
-├── generated/
-├── tests/
-└── examples/
-```
-
 ## Architecture
 
 The project is organized into four main stages:
