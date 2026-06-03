@@ -1,6 +1,6 @@
 Schema-driven Binary Order Entry (BOE) codec generator in C++ for learning exchange protocol design and binary message handling.
 
-## Overview
+#### Overview
 
 `boe-codegen-cpp` is a clean-room educational project for generating C++ message types, encoders, and decoders from a protocol schema.
 
@@ -8,7 +8,7 @@ The goal of the project is to study how low-latency exchange connectivity softwa
 
 This project is focused on learning and systems design, not on building a complete production trading engine.
 
-## Goals
+#### Goals
 
 - Learn how Binary Order Entry style protocols are structured.
 - Represent protocol definitions in a schema format.
@@ -17,14 +17,7 @@ This project is focused on learning and systems design, not on building a comple
 - Explore low-latency design patterns used in exchange connectivity systems.
 - Keep the implementation small, understandable, and testable.
 
-## Non-Goals
-
-- Building a full trading engine
-- Implementing market-making or execution strategies
-- Providing production-ready exchange connectivity
-- Reproducing any third-party repository implementation line-for-line
-
-## Architecture
+#### Architecture
 
 The project is organized into four main stages:
 
@@ -44,7 +37,7 @@ The project is organized into four main stages:
 4. **Runtime support**  
    Provides small handwritten utilities such as status handling, endian conversion, bounds checking, and shared codec helpers.
 
-## Example Workflow
+#### Example Workflow
 
 1. Define a BOE-style protocol schema in YAML.
 2. Parse the schema into an internal representation.
