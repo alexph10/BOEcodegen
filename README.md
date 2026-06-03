@@ -2,7 +2,7 @@ Schema-driven Binary Order Entry (BOE) codec generator in C++ for learning excha
 
 #### Overview
 
-`boe-codegen-cpp` is a clean-room educational project for generating C++ message types, encoders, and decoders from a protocol schema.
+educational project for generating C++ message types, encoders, and decoders from a protocol schema.
 
 The goal of the project is to study how low-latency exchange connectivity software is structured: binary message layouts, protocol constraints, order-entry session semantics, and code generation from a single source of truth.
 
