@@ -1,4 +1,4 @@
-Schema-driven Binary Order Entry (BOE) codec generator in C++ for learning exchange protocol design and binary message handling.
+Schema-driven Binary Order Entry (BOE) code generator in C++ for learning exchange protocol design and binary message handling.
 
 #### Overview
 
